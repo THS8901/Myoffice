@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Myoffice</name>
+    </assembly>
+    <members>
+        <member name="M:MyOfficeAcpdApi.Controllers.MyOfficeAcpdController.GetAll">
+            <summary>查詢 MyOffice_ACPD內所有Data</summary>
+        </member>
+        <member name="M:MyOfficeAcpdApi.Controllers.MyOfficeAcpdController.Select(System.Text.Json.JsonElement)">
+            <summary>以 JSON 條件查詢 MyOffice_ACPD</summary>
+            <param name="body">
+            <example>
+            {
+              "ACPD_Ename":"test1"
+            }
+            </example>
+            </param>
+        </member>
+        <member name="M:MyOfficeAcpdApi.Controllers.MyOfficeAcpdController.Create(System.Text.Json.JsonElement)">
+            <summary>新增一筆 MyOffice_ACPD</summary>
+            <param name="body">
+            <example>
+            {
+              "ACPD_Cname":"測試1",
+              "ACPD_Ename":"test1",
+              "ACPD_Sname":"t1",
+              "ACPD_Email":"test1@example.com",
+              "ACPD_Status":1,
+              "ACPD_Stop":0,
+              "ACPD_LoginID":"t001",
+              "ACPD_LoginPWD":"Pwd123456",
+              "ACPD_Memo":"測試",
+              "ACPD_NowID":"admin",
+              "ACPD_UPDID":"admin"
+            }
+            </example>
+            </param>
+        </member>
+        <member name="M:MyOfficeAcpdApi.Controllers.MyOfficeAcpdController.Update(System.Text.Json.JsonElement)">
+            <summary>更新一筆 MyOffice_ACPD</summary>
+            <param name="body">
+            <example>
+            {
+              "ACPD_SID": "ACPD2025?????",
+              "ACPD_Cname":"測試1",
+              "ACPD_Ename":"test1",
+              "ACPD_Sname":"t1",
+              "ACPD_Email":"test1@example.com",
+              "ACPD_Status":1,
+              "ACPD_Stop":0,
+              "ACPD_LoginID":"t001",
+              "ACPD_LoginPWD":"Pwd123456",
+              "ACPD_Memo":"測試",
+              "ACPD_NowID":"admin",
+              "ACPD_UPDID":"admin"
+            }
+            </example>
+            </param>
+        </member>
+        <member name="M:MyOfficeAcpdApi.Controllers.MyOfficeAcpdController.Delete(System.Text.Json.JsonElement)">
+            <summary>刪除一筆 MyOffice_ACPD</summary>
+            <param name="body">
+            <example>
+            {
+              "ACPD_SID": "ACPD2025?????",
+              "ACPD_Cname":"測試1",
+              "ACPD_Ename":"test1",
+              "ACPD_Sname":"t1",
+              "ACPD_Email":"test1@example.com",
+              "ACPD_Status":1,
+              "ACPD_Stop":0,
+              "ACPD_LoginID":"t001",
+              "ACPD_LoginPWD":"Pwd123456",
+              "ACPD_Memo":"測試",
+              "ACPD_NowID":"admin",
+              "ACPD_UPDID":"admin"
+            }
+            </example>
+            </param>
+        </member>
+    </members>
+</doc>

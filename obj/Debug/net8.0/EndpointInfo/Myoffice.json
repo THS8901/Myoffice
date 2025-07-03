@@ -1,0 +1,190 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Myoffice",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/MyOfficeAcpd": {
+      "get": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "summary": "查詢 MyOffice_ACPD內所有Data",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "summary": "新增一筆 MyOffice_ACPD",
+        "requestBody": {
+          "description": "<example>\r\n            {\r\n              \"ACPD_Cname\":\"測試1\",\r\n              \"ACPD_Ename\":\"test1\",\r\n              \"ACPD_Sname\":\"t1\",\r\n              \"ACPD_Email\":\"test1@example.com\",\r\n              \"ACPD_Status\":1,\r\n              \"ACPD_Stop\":0,\r\n              \"ACPD_LoginID\":\"t001\",\r\n              \"ACPD_LoginPWD\":\"Pwd123456\",\r\n              \"ACPD_Memo\":\"測試\",\r\n              \"ACPD_NowID\":\"admin\",\r\n              \"ACPD_UPDID\":\"admin\"\r\n            }\r\n            </example>",
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "summary": "更新一筆 MyOffice_ACPD",
+        "requestBody": {
+          "description": "<example>\r\n            {\r\n              \"ACPD_SID\": \"ACPD2025?????\",\r\n              \"ACPD_Cname\":\"測試1\",\r\n              \"ACPD_Ename\":\"test1\",\r\n              \"ACPD_Sname\":\"t1\",\r\n              \"ACPD_Email\":\"test1@example.com\",\r\n              \"ACPD_Status\":1,\r\n              \"ACPD_Stop\":0,\r\n              \"ACPD_LoginID\":\"t001\",\r\n              \"ACPD_LoginPWD\":\"Pwd123456\",\r\n              \"ACPD_Memo\":\"測試\",\r\n              \"ACPD_NowID\":\"admin\",\r\n              \"ACPD_UPDID\":\"admin\"\r\n            }\r\n            </example>",
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "summary": "刪除一筆 MyOffice_ACPD",
+        "requestBody": {
+          "description": "<example>\r\n            {\r\n              \"ACPD_SID\": \"ACPD2025?????\",\r\n              \"ACPD_Cname\":\"測試1\",\r\n              \"ACPD_Ename\":\"test1\",\r\n              \"ACPD_Sname\":\"t1\",\r\n              \"ACPD_Email\":\"test1@example.com\",\r\n              \"ACPD_Status\":1,\r\n              \"ACPD_Stop\":0,\r\n              \"ACPD_LoginID\":\"t001\",\r\n              \"ACPD_LoginPWD\":\"Pwd123456\",\r\n              \"ACPD_Memo\":\"測試\",\r\n              \"ACPD_NowID\":\"admin\",\r\n              \"ACPD_UPDID\":\"admin\"\r\n            }\r\n            </example>",
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MyOfficeAcpd/select": {
+      "post": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "summary": "以 JSON 條件查詢 MyOffice_ACPD",
+        "requestBody": {
+          "description": "<example>\r\n            {\r\n              \"ACPD_Ename\":\"test1\"\r\n            }\r\n            </example>",
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "Date": {
+            "type": "string",
+            "format": "date"
+          },
+          "TemperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "TemperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "Summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
