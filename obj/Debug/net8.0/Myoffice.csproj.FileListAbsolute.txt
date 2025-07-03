@@ -171,3 +171,5 @@ D:\GithubRepositories\Myoffice\obj\Debug\net8.0\refint\Myoffice.dll
 D:\GithubRepositories\Myoffice\obj\Debug\net8.0\Myoffice.pdb
 D:\GithubRepositories\Myoffice\obj\Debug\net8.0\Myoffice.genruntimeconfig.cache
 D:\GithubRepositories\Myoffice\obj\Debug\net8.0\ref\Myoffice.dll
+D:\GithubRepositories\Myoffice\bin\Debug\net8.0\Myoffice.xml
+D:\GithubRepositories\Myoffice\obj\Debug\net8.0\Myoffice.xml
