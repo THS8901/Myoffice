@@ -1,0 +1,181 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Myoffice",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/MyOfficeAcpd": {
+      "get": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MyOfficeAcpd/select": {
+      "post": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "Date": {
+            "type": "string",
+            "format": "date"
+          },
+          "TemperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "TemperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "Summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
